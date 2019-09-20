@@ -1,7 +1,15 @@
+---
+name: Evaluation template
+about: Is this work ready to proceed to Chartering
+title: ''
+labels: 'Evaluation: untriaged'
+assignees: ''
+
+---
+
 # Evaluation
 
-A core part of our *Strategic* work is the evaluation of how proposed work serves the Web. In the "Evaluation" phase at the end of the funnel,
-we make the case whether work is ready to proceed to Chartering of a Recommendation-track deliverable. At that point, we need to identify:
+A core part of our *Strategic* work is the evaluation of how proposed work serves the Web. In the "Evaluation" phase at the end of the funnel, we make the case whether work is ready to proceed to Chartering of a Recommendation-track deliverable. At that point, we need to identify:
 
 * Will this work help to lead the web to its full potential?
 
