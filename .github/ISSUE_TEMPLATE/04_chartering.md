@@ -6,7 +6,7 @@ labels: 'Evaluation: untriaged'
 assignees: ''
 
 ---
-Please fill the template below to note a new charter or  
+Please fill the template below to note a new charter or charter revision for strategy review.
 
 # Charter Review
 
