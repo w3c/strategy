@@ -1,12 +1,13 @@
 ---
 name: Chartering template
-about: Charter development and review
+about: Charter development and review. Please fill the template to note a new charter or charter revision for strategy review.
 title: ''
 labels: 'Evaluation: untriaged'
 assignees: ''
 
 ---
-Please fill the template below to note a new charter or charter revision for strategy review.
+
+New charter proposal, reviewers please take note.
 
 # Charter Review
 
@@ -34,4 +35,4 @@ Communities suggested for outreach:
 
 Known or potential areas of concern?: 
 
-Where would you like to see issues raised? (github preferred, email, ...)
+Where would charter proponents like to see issues raised? (github preferred, email, ...)
