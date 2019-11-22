@@ -1,6 +1,6 @@
 ---
 name: Investigation template
-about: Is this a work area you'd like to suggest the W3C explore?
+about: Do you have pointers to work or a community you suggest W3C investigate further?
 title: ''
 labels: 'Investigation: untriaged'
 assignees: ''
