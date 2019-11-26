@@ -25,7 +25,7 @@ What kind of charter is this? Check the relevant box / remove irrelevant branche
  - [ ] Existing IG recharter
  - If this is a charter extension or revision, link a [diff from previous charter](https://services.w3.org/htmldiff), and any issue discussion:
 
-Horizontal Reviews:
+Horizontal Reviews (intended to be checked only by horizontal reviewers when they are satisfied with the charter)
   - [ ] Accessibility (a11y)
   - [ ] Internationalization (i18n)
   - [ ] Privacy
