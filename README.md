@@ -1,14 +1,19 @@
 # Strategy
 
-The [Strategy Funnel](https://github.com/w3c/strategy/projects/2) shows work under consideration by the W3C Strategy team. 
+### The [Strategy Funnel](https://github.com/w3c/strategy/projects/2) shows work under consideration by the W3C Strategy team. 
 
 The funnel reads from left to right. Most issues (cards) start in Exploration and move forward or move out of the funnel.
 
-[0.Exploration](https://github.com/w3c/strategy/blob/main/0.Exploration.md)
-[1.Investigation](https://github.com/w3c/strategy/blob/main/1.Investigation.md)
-[2.Incubation](https://github.com/w3c/strategy/blob/main/2.Incubation.md)
-[3.Evaluation](https://github.com/w3c/strategy/blob/main/3.Evaluation.md) 
-[4.Chartering](https://github.com/w3c/strategy/blob/main/4.Chartering.md)
+[0.Exploration](https://github.com/w3c/strategy/blob/main/0.Exploration.md)<b>
+  
+[1.Investigation](https://github.com/w3c/strategy/blob/main/1.Investigation.md)<b>
+  
+[2.Incubation](https://github.com/w3c/strategy/blob/main/2.Incubation.md)<b>
+    
+[3.Evaluation](https://github.com/w3c/strategy/blob/main/3.Evaluation.md)<b> 
+  
+[4.Chartering](https://github.com/w3c/strategy/blob/main/4.Chartering.md)<b>
+  
 
 The funnel is one method for the Strategy Team to do our work in and with the public.  We aim to enhance the communications required by [W3C Process](https://www.w3.org/Consortium/Process) with discussion here and periodic summaries.
 
