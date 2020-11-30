@@ -1,6 +1,6 @@
 # Strategy
 
-The [Strategy Funnel](https://github.com/w3c/strategy/projects/2) shows work under consideration by the W3C Strategy team. 
+### The [Strategy Funnel](https://github.com/w3c/strategy/projects/2) shows work under consideration by the W3C Strategy team. 
 
 The funnel reads from left to right. Most issues (cards) start in Exploration and move forward or move out of the funnel.
 
