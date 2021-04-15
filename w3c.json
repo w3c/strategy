@@ -4,3 +4,85 @@
 ,   "policy":     "open"
 ,   "repo-type":  "project"
 }
+
+Delivery has failed to these recipients or groups:
+
+hwcloud (hwcloud@huawei.com)
+The recipient's mailbox is full and can't accept messages now. Please try resending your message later, or contact the recipient directly.
+
+
+The following organization rejected your message: dggpeml500006.china.huawei.com.
+
+
+
+
+
+
+
+Diagnostic information for administrators:
+
+Generating server: dggpeml100008.china.huawei.com
+hwcloud@huawei.com
+dggpeml500006.china.huawei.com
+Remote Server returned '554 5.2.2 mailbox full; STOREDRV.Deliver.Exception:QuotaExceededException.MapiExceptionShutoffQuotaExceeded; Failed to process message due to a permanent exception with message Cannot get ID from name. 16.55847:C80C0000, 17.43559:000000008C000000000000000000000000000000, 20.52176:010F3A880D00103100000000, 20.50032:010F3A887D17000000000000, 0.35180:010F3A88, 255.23226:6B010000, 255.27962:56000000, 255.17082:B9040000, 0.16993:DD040000, 4.21921:B9040000, 255.31418:DD040000, 0.22753:FA000000, 255.21817:B9040000, 0.37224:00000000, 4.40808:DD040000, 0.24529:332D3439, 4.18385:DD040000, 0.36864:64633231, 4.37120:DD040000 [Stage: CreateMessage]'
+Original message headers:
+
+Received: from dggpeml100009.china.huawei.com (7.185.36.95) by
+ dggpeml100008.china.huawei.com (7.185.36.48) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2106.2; Fri, 16 Apr 2021 06:02:10 +0800
+Received: from dggpeml100009.china.huawei.com (7.185.36.95) by
+ dggpeml100009.china.huawei.com (7.185.36.95) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2106.2; Fri, 16 Apr 2021 06:02:10 +0800
+Received: from DGGEMS405-HUB.china.huawei.com (10.3.19.205) by
+ dggpeml100009.china.huawei.com (7.185.36.95) with Microsoft SMTP Server
+ (version=TLS1_0, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA) id 15.1.2106.2
+ via Frontend Transport; Fri, 16 Apr 2021 06:02:10 +0800
+Received: from dggsg03-in (172.30.84.49) by DGGEMS405-HUB.china.huawei.com
+ (10.3.19.205) with Microsoft SMTP Server id 14.3.498.0; Fri, 16 Apr 2021
+ 06:02:10 +0800
+Received: from mail-pg1-f173.google.com (mail-pg1-f173.google.com
+ [209.85.215.173])	by dggsg03-in (SkyGuard) with ESMTPS id 4FLtb50Llkz2J87m
+	for <hwcloud@huawei.com>; Fri, 16 Apr 2021 06:01:20 +0800 (CST)
+Received: by mail-pg1-f173.google.com with SMTP id z16so17837798pga.1
+        for <hwcloud@huawei.com>; Thu, 15 Apr 2021 15:02:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=date:subject:message-id:from:to:mime-version;
+        bh=601JBkLasJJr0avFISeGCrPGEk9a4kL/wjedjxssyeU=;
+        b=Y39YqW6JWnRjTe9J8pBTAz7JHAGggFSq2LfJiSdMjZqtOZ6EvzMBNsOnmA5tkZ6LY8
+         VI3oI3xyagR4aTP92QrN1RQwGjTvtzOra/s5rcW9OmKjni6eL843FLZP01rUMItYmAuj
+         SD363y9iDdhiDKaJjp4IFGh/UIoqBqyzULtkiFqmAxEAVmGz+puzR3VUUNC2WcTMZkUj
+         izjkzICkx8elRsumQCgNcGuD8xmOIlVdGKZw00CEF4c9hWXePopzMrKo29e8g/ExDouZ
+         vwK5vCYYgFWRj/or82UqYcNxxiDDprO6qjlEVIE+QnkdA/8VNCCmWerdSzZQ7XbNkdOr
+         HIOw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:subject:message-id:from:to:mime-version;
+        bh=601JBkLasJJr0avFISeGCrPGEk9a4kL/wjedjxssyeU=;
+        b=rer8DthV3Hwr+aKIa/CkzJtxUGV1Bh5Svvfj9JaBcCn6Qp4z4qKoi8LlYirCUycAlg
+         1YSJsPmnBQWZQTivSeB1KcvEGfS1CeDWJJIU+X5ukWAfPphqwbCrVywxyvpIGHEiR6g9
+         lBuqkdkGOETV2372Ba0ssYrRpXvG5tYgTDCb9+HFI7u1EASF/w3bkgyInPcEhhmCuDVf
+         fZmvK2g+6NrYa2AdQlZLze3yUwnPafzAQyT2ImjHAB/9RuWFuFRXGs7qxnmRW+0jt1gQ
+         2+eA62UodP45DLYxF52oLx8eHolf8Ba8XPUgF/G2KsitHKMiMixba2BK0ByesTK2+exV
+         Grzw==
+X-Gm-Message-State: AOAM531vVaI5VZMD6UVqlc2xpHVaKL4YUA/2orv+M6lTTganPWE+/r5t
+	oOfhjn1NQMeVGMmEMpViKvlRgOerYCCDmGWNnRg=
+X-Google-Smtp-Source: ABdhPJxgY+EDBQGqRqmpSxOI7sL5cru0ceOvBjkLuv6W0htV1FfocC9/CYrczNpOWnU+iJ6Fl+3Zkg==
+X-Received: by 2002:a62:7bc3:0:b029:251:20c1:2ed8 with SMTP id w186-20020a627bc30000b029025120c12ed8mr5307305pfc.10.1618524122056;
+        Thu, 15 Apr 2021 15:02:02 -0700 (PDT)
+Received: from [10.102.82.106] (ppp-223-24-61-7.revip6.asianet.co.th.
+ [223.24.61.7])        by smtp.gmail.com with ESMTPSA id
+ p18sm54807pju.3.2021.04.15.15.02.00        for <hwcloud@huawei.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Apr 2021 15:02:01 -0700 (PDT)
+Date: Fri, 16 Apr 2021 05:01:55 +0700
+Subject: Huawei Backup
+Message-ID: <oovciclf9arfo938bepc8av6.1618524115035@email.vivo.com>
+From: kroekchaicup <kroekchaicup@gmail.com>
+To: hwcloud <hwcloud@huawei.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="--_com.android.email_5233646569907660"
+Return-Path: kroekchaicup@gmail.com
