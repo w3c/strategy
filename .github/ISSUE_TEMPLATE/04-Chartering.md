@@ -1,9 +1,8 @@
 ---
 name: Chartering template
-about: Charter development and review. Please fill the template to note a new charter or charter revision for strategy review.
+about: Charter development and review.
 title: '[wg/<shortname>] [name] Group Charter'
-labels: 'Evaluation: untriaged', charter
-assignees: ''
+labels: charter
 
 ---
 
@@ -12,6 +11,9 @@ New charter proposal, reviewers please take note.
 # Charter Review
 
 [Charter:](link)
+
+If applicable:
+[diff from previous charter](https://services.w3.org/htmldiff)
 
 What kind of charter is this? Check the relevant box / remove irrelevant branches. 
 
@@ -23,9 +25,9 @@ What kind of charter is this? Check the relevant box / remove irrelevant branche
 * Existing 
  - [ ] Existing WG recharter 
  - [ ] Existing IG recharter
- - If this is a charter extension or revision, link a [diff from previous charter](https://services.w3.org/htmldiff), and any issue discussion:
+ - If this is a charter extension or revision, any issue discussion:
 
-Horizontal Reviews: apply the Github label "Horizontal review requested" to request reviews for accessibility (a11y), internationalization (i18n), privacy, and security. **Also add a "card" for this issue to the [Strategy Funnel](https://github.com/w3c/strategy/projects/2).**
+Horizontal Reviews: apply the Github label "Horizontal review requested" to request reviews for accessibility (a11y), internationalization (i18n), privacy, security, and TAG. **Also add a "card" for this issue to the [Strategy Funnel](https://github.com/w3c/strategy/projects/2).**
 
 Communities suggested for outreach: 
 
