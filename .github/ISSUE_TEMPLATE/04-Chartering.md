@@ -2,7 +2,7 @@
 name: Chartering template
 about: Charter development and review. Please fill the template to note a new charter or charter revision for strategy review.
 title: ''
-labels: 'Evaluation: untriaged'
+labels: 'Evaluation: untriaged', charter
 assignees: ''
 
 ---
@@ -34,3 +34,5 @@ Known or potential areas of concern:
 Where would charter proponents like to see issues raised? (this strategy funnel issue, a different github repo, email, ...)
 
 Anything else we should think about as we review? 
+
+Note: proposed chairs should be copied @... on this issue.
