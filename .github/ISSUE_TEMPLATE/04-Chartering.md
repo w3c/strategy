@@ -1,7 +1,7 @@
 ---
 name: Chartering template
 about: Charter development and review. Please fill the template to note a new charter or charter revision for strategy review.
-title: ''
+title: '[wg/<shortname>] [name] Group Charter'
 labels: 'Evaluation: untriaged', charter
 assignees: ''
 
