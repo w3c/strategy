@@ -2,6 +2,12 @@
 
 ### The [W3C Strategy Team's Incubation Pipeline (Funnel)](https://github.com/w3c/strategy/projects/2) shows work under consideration by the [W3C Strategy team](https://www.w3.org/staff/strat/). 
 
+# Charter issues status
+
+A [charter cashboard](https://www.w3.org/2024/03/charters-in-dev.html) presents a view of the ongoing issues related to charters.
+
+# Pipeline
+
 The pipeline reads from left to right. Most issues (cards) start in Exploration and move forward or move out of the funnel.
 
 0. [Exploration](https://github.com/w3c/strategy/blob/main/0.Exploration.md)
