@@ -8,8 +8,7 @@ body:
     attributes:
       label: Describe the web problem you think needs solving
       description: |
-        Just one or two sentences is often sufficient.
-        Simple markdown only please (inline formatting, links, lists).
+        Just one or two sentences is often sufficient. Simple markdown only please (inline formatting, links, lists).
     validations:
       required: true
 
