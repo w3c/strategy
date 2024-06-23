@@ -1,5 +1,5 @@
 name: Problem template
-description: Document a problem that you think needs solving for users of the web
+description: Describe a problem that you think needs solving for users of the web
 labels: ["problem"]
 body:
 
