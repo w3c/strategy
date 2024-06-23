@@ -1,0 +1,27 @@
+name: Problem template
+description: Document a problem that you think needs solving for users of the web
+labels: ["problem"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing to chair a TPAC breakout session. Please ensure that the session is [in scope for a TPAC breakout](https://github.com/w3c/tpac-breakouts/wiki/Policies#session-scope) and review the [good practices for session chairs](https://github.com/w3c/tpac-breakouts/wiki/Good-Practices-for-Session-Chairs), which includes information about [how you can later update your session](https://github.com/w3c/tpac-breakouts/wiki/Good-Practices-for-Session-Chairs#how-to-update-a-session).
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the web problem you think needs solving
+      description: |
+        Simple markdown only please (inline formatting, links, lists).
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Describe some use cases and requirements in detail
+      description: |
+        A use case is a description of a user facing a problem for which we don’t yet have a good solution; in other words, a use case is an actual user wanting to do something. See [Sandboxed Filesystem use cases?](https://lists.w3.org/Archives/Public/public-webapps/2012JulSep/0835.html) for an example of how to describe use cases and requirements related to a specific problem.
+    validations:
+      required: false
