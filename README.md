@@ -1,6 +1,6 @@
 # Strategy
 
-### The [W3C Strategy Team's Incubation Pipeline (Funnel)](https://github.com/w3c/strategy/projects/2) shows work under consideration by the [W3C Strategy team](https://www.w3.org/staff/strat/). 
+### The [W3C Strategy Team's Incubation Pipeline (Funnel)](https://github.com/orgs/w3c/projects/97/views/1) shows work under consideration by the [W3C Strategy team](https://www.w3.org/staff/strat/). 
 
 # Charter issues status
 
