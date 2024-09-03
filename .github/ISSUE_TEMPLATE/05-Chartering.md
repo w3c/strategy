@@ -15,7 +15,9 @@ New charter proposal, reviewers please take note.
 [diff from charter template](https://services.w3.org/htmldiff?doc1=https://w3c.github.io/charter-drafts/charter-template.html&doc2=link)
 
 If applicable:
+
 [diff from previous charter](https://services.w3.org/htmldiff)
+[chair dashboard](https://www.w3.org/PM/Groups/chairboard.html?gid=wg/<shortname>)
 
 What kind of charter is this? Check the relevant box / remove irrelevant branches. 
 
@@ -30,10 +32,6 @@ What kind of charter is this? Check the relevant box / remove irrelevant branche
  - If this is a charter extension or revision, any issue discussion:
 
 Horizontal Reviews: apply the Github label "Horizontal review requested" to request reviews for accessibility (a11y), internationalization (i18n), privacy, security, and TAG. **Also add a "card" for this issue to the [Strategy Funnel](https://github.com/orgs/w3c/projects/97/views/2).**
-
-## Group status
-
-[chair dashboard](https://www.w3.org/PM/Groups/chairboard.html?gid=wg/<shortname>)
 
 ## Communities suggested for outreach
 
