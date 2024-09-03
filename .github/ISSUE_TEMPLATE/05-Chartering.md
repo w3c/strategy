@@ -17,6 +17,7 @@ New charter proposal, reviewers please take note.
 If applicable:
 
 [diff from previous charter](https://services.w3.org/htmldiff)
+
 [chair dashboard](https://www.w3.org/PM/Groups/chairboard.html?gid=wg/<shortname>)
 
 What kind of charter is this? Check the relevant box / remove irrelevant branches. 
