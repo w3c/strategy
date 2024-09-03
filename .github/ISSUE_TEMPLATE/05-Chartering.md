@@ -27,7 +27,7 @@ What kind of charter is this? Check the relevant box / remove irrelevant branche
  - [ ] Existing IG recharter
  - If this is a charter extension or revision, any issue discussion:
 
-Horizontal Reviews: apply the Github label "Horizontal review requested" to request reviews for accessibility (a11y), internationalization (i18n), privacy, security, and TAG. **Also add a "card" for this issue to the [Strategy Funnel](https://github.com/w3c/strategy/projects/2).**
+Horizontal Reviews: apply the Github label "Horizontal review requested" to request reviews for accessibility (a11y), internationalization (i18n), privacy, security, and TAG. **Also add a "card" for this issue to the [Strategy Funnel](https://github.com/orgs/w3c/projects/97/views/2).**
 
 Communities suggested for outreach: 
 
