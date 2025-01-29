@@ -1,0 +1,24 @@
+name: Create Cross-Repo Issue on Horizontal Label
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  create-issue:
+    if: github.event.label.name == 'Horizontal review requested'
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write  # Still needed to read source issue
+
+    steps:
+    - name: Create new issue in target repository
+      run: |
+        gh issue create \
+          --repo "w3cping/privacy-request" \
+          --title " #${{ github.event.issue.title }}" \
+          --body "This issue was created because the 'horizontal review requested' label was added to\n\n ${{ github.event.issue.html_url }}" \
+          --label "charter"
+      env:
+        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
