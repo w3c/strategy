@@ -1,14 +1,14 @@
-# Strategy
+# W3C Technical Programming
 
 ### The [W3C Technical Programming Pipeline](https://github.com/orgs/w3c/projects/97/views/1) shows work under consideration by the [W3C Technical Programming team](https://www.w3.org/staff/strat/). 
 
 # Charter issues status
 
-A [charter cashboard](https://www.w3.org/2024/03/charters-in-dev.html) presents a view of the ongoing issues related to charters.
+A [charter in development dashboard](https://www.w3.org/2024/03/charters-in-dev.html) presents a view of the ongoing issues related to charters.
 
 # Pipeline
 
-The pipeline reads from left to right. Most issues (cards) start in Exploration and move forward or move out of the funnel.
+The [pipeline](https://github.com/orgs/w3c/projects/97/views/1) reads from left to right. Most issues (cards) start in Exploration and move forward or move out of the funnel.
 
 0. [Exploration](https://github.com/w3c/strategy/blob/main/0.Exploration.md)
 1. [Investigation](https://github.com/w3c/strategy/blob/main/1.Investigation.md)
