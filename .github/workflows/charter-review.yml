@@ -18,7 +18,7 @@ jobs:
         gh issue create \
           --repo "w3cping/privacy-request" \
           --title "${{ github.event.issue.title }}" \
-          --body "This issue was created because the 'horizontal review requested' label was added to\n\n ${{ github.event.issue.html_url }}" \
+          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
           --label "charter"
       env:
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
