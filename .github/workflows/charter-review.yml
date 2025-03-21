@@ -22,10 +22,37 @@ jobs:
           --label "charter"
       env:
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
-    - name: Create new issue in w3c/a11y-review
+    - name: Create new issue in w3c/a11y-request
       run: |
         gh issue create \
-          --repo "w3c/a11y-review" \
+          --repo "w3c/a11y-request" \
+          --title "${{ github.event.issue.title }}" \
+          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
+          --label "charter"
+      env:
+        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
+    - name: Create new issue in w3c/w3c/i18n-request
+      run: |
+        gh issue create \
+          --repo "w3c/w3c/i18n-request" \
+          --title "${{ github.event.issue.title }}" \
+          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
+          --label "charter"
+      env:
+        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
+    - name: Create new issue in w3c/security-request
+      run: |
+        gh issue create \
+          --repo "w3c/security-request" \
+          --title "${{ github.event.issue.title }}" \
+          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
+          --label "charter"
+      env:
+        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
+    - name: Create new issue in w3ctag/design-reviews
+      run: |
+        gh issue create \
+          --repo "w3ctag/design-reviews" \
           --title "${{ github.event.issue.title }}" \
           --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
           --label "charter"
