@@ -12,11 +12,20 @@ jobs:
     permissions:
       issues: write  # Still needed to read source issue
 
-    steps:
-    - name: Create new issue in target repository
+    steps: # @@ use https://w3c.github.io/common-labels.json instead of harcoding GH repo
+    - name: Create new issue in w3cping/privacy-request
       run: |
         gh issue create \
           --repo "w3cping/privacy-request" \
+          --title "${{ github.event.issue.title }}" \
+          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
+          --label "charter"
+      env:
+        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
+    - name: Create new issue in w3c/a11y-review
+      run: |
+        gh issue create \
+          --repo "w3c/a11y-review" \
           --title "${{ github.event.issue.title }}" \
           --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
           --label "charter"
