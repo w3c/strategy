@@ -34,7 +34,7 @@ jobs:
     - name: Create new issue in w3c/w3c/i18n-request
       run: |
         gh issue create \
-          --repo "w3c/w3c/i18n-request" \
+          --repo "w3c/i18n-request" \
           --title "${{ github.event.issue.title }}" \
           --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
           --label "charter"
