@@ -1,25 +1,50 @@
-name: Create Cross-Repo Issue on Horizontal Label
+name: Create review request issues for charters
 
 on:
   issues:
     types: [labeled]
 
+# Using 
+# https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#example-using-an-output-to-define-two-matrices
+
 jobs:
+  retrieve-horizontal-repos: # define the matrix of horizontal repo names
+    runs-on: ubuntu-latest
+
+    outputs:
+      repos: ${{ steps.extract.outputs.repos }}
+    
+    steps:
+      # Will save its output into labels.json file
+      # Abort on failure
+      - name: Retrieve common-labels.json
+        run: |
+          curl --fail -o labels.json "https://w3c.github.io/common-labels.json"
+
+      # jq comes pre-installed in Github runners: https://jqlang.org/
+      # -c to disable JSON pretty printing
+      # filter out null values
+      - name: Extract horizontal repositories for review requests
+        id: extract
+        run: |
+          REPOS=`jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json`
+          echo "repos=$REPOS" >> "$GITHUB_OUTPUT"
+
   create-issue:
     if: github.event.label.name == 'Horizontal review requested'
     runs-on: ubuntu-latest
 
     permissions:
-      issues: write  # Still needed to read source issue
+      issues: write
       
+    needs: retrieve-horizontal-repos
     strategy:
-      matrix: # @@ use https://w3c.github.io/common-labels.json instead of harcoding GH repos
-        h_repo: [ w3cping/privacy-request, w3c/a11y-request, w3c/i18n-request, w3c/security-request, w3ctag/design-reviews ]
+      matrix:
+        repo: ${{ fromJSON(needs.retrieve-horizontal-repos.outputs.repos) }}
 
-    steps: # @@ use https://w3c.github.io/common-labels.json instead of harcoding GH repo
-    - name: Create new issue in an horizontal repository
+    steps:
+    - name: create issue in ${{ h_repo }}
       run: |
-        echo "Create an issue in ${{ h_repo }}"
         gh issue create \
           --repo "${{ h_repo }}" \
           --title "${{ github.event.issue.title }}" \
