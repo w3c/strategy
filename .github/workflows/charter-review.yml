@@ -16,17 +16,14 @@ jobs:
     
     steps:
       # Will save its output into labels.json file
-      # Abort on failure
-      - name: Retrieve common-labels.json
-        run: |
-          curl --fail -o labels.json "https://w3c.github.io/common-labels.json"
-
+      # Abort on curl failure
       # jq comes pre-installed in Github runners: https://jqlang.org/
       # -c to disable JSON pretty printing
       # filter out null values
-      - name: Extract horizontal repositories for review requests
+      - name: Retrieve common-labels.json
         id: extract
         run: |
+          curl --fail -o labels.json "https://w3c.github.io/common-labels.json"
           REPOS=`jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json`
           echo "repos=$REPOS" >> "$GITHUB_OUTPUT"
 
