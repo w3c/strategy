@@ -11,48 +11,17 @@ jobs:
 
     permissions:
       issues: write  # Still needed to read source issue
+      
+    strategy:
+      matrix: # @@ use https://w3c.github.io/common-labels.json instead of harcoding GH repos
+        h_repo: [ w3cping/privacy-request, w3c/a11y-request, w3c/i18n-request, w3c/security-request, w3ctag/design-reviews ]
 
     steps: # @@ use https://w3c.github.io/common-labels.json instead of harcoding GH repo
-    - name: Create new issue in w3cping/privacy-request
+    - name: Create new issue in an horizontal repository
       run: |
+        echo "Create an issue in ${{ h_repo }}"
         gh issue create \
-          --repo "w3cping/privacy-request" \
-          --title "${{ github.event.issue.title }}" \
-          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
-          --label "charter"
-      env:
-        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
-    - name: Create new issue in w3c/a11y-request
-      run: |
-        gh issue create \
-          --repo "w3c/a11y-request" \
-          --title "${{ github.event.issue.title }}" \
-          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
-          --label "charter"
-      env:
-        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
-    - name: Create new issue in w3c/i18n-request
-      run: |
-        gh issue create \
-          --repo "w3c/i18n-request" \
-          --title "${{ github.event.issue.title }}" \
-          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
-          --label "charter"
-      env:
-        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
-    - name: Create new issue in w3c/security-request
-      run: |
-        gh issue create \
-          --repo "w3c/security-request" \
-          --title "${{ github.event.issue.title }}" \
-          --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
-          --label "charter"
-      env:
-        GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
-    - name: Create new issue in w3ctag/design-reviews
-      run: |
-        gh issue create \
-          --repo "w3ctag/design-reviews" \
+          --repo "${{ h_repo }}" \
           --title "${{ github.event.issue.title }}" \
           --body "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" \
           --label "charter"
