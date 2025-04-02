@@ -15,11 +15,10 @@ jobs:
       repos: ${{ steps.extract.outputs.repos }}
     
     steps:
-      # Will save its output into labels.json file
-      # Abort on curl failure
+      # Abort on http get failure
       # jq comes pre-installed in Github runners: https://jqlang.org/
       # -c to disable JSON pretty printing
-      # filter out null values
+      # filter out null values and make values unique
       - name: Retrieve common-labels.json
         id: extract
         run: |
