@@ -42,8 +42,10 @@ jobs:
     - name: create issue in ${{ matrix.repo }}
       run: |
         echo "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" >> body.txt
-        echo "\nThis review is requested prior to the [Advisory Committee Review](https://www.w3.org/guide/process/charter.html#ac-review)." >> body.txt
-        echo "\n${{ github.event.issue.body }}" >> body.txt
+        echo "" >> body.txt
+        echo "This review is requested prior to the [Advisory Committee Review](https://www.w3.org/guide/process/charter.html#ac-review)." >> body.txt
+        echo "" >> body.txt
+        echo "${{ github.event.issue.body }}" >> body.txt
         gh issue create \
           --repo "${{ matrix.repo }}" \
           --title "${{ github.event.issue.title }}" \
