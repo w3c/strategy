@@ -23,7 +23,7 @@ jobs:
         id: extract
         run: |
           curl --fail -o labels.json "https://w3c.github.io/common-labels.json"
-          REPOS=`jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json`
+          REPOS=$(jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json)
           echo "repos=$REPOS" >> "$GITHUB_OUTPUT"
 
   create-issue:
