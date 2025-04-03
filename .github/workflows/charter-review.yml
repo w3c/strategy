@@ -39,13 +39,13 @@ jobs:
         repo: ${{ fromJSON(needs.retrieve-horizontal-repos.outputs.repos) }}
 
     steps:
-    - name: create issue in ${{ h_repo }}
+    - name: create issue in ${{ repo }}
       run: |
         echo "This issue was created because the 'horizontal review requested' label was added to ${{ github.event.issue.html_url }}" >> body.txt
         echo "\nThis review is requested prior to the [Advisory Committee Review](https://www.w3.org/guide/process/charter.html#ac-review)." >> body.txt
         echo "\n${{ github.event.issue.body }}" >> body.txt
         gh issue create \
-          --repo "${{ h_repo }}" \
+          --repo "${{ repo }}" \
           --title "${{ github.event.issue.title }}" \
           --body-file body.txt
           --label "charter"
