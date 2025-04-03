@@ -44,6 +44,8 @@ jobs:
         repo: ${{ matrix.repo }}
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
       run: |
+        echo "${{ github.event.issue }}" > issue.json
+        ASSIGNEES=$(jq -c -r '.assignees.[].login' issue.json | sed -s 's/^/cc @/')
         cat << EOF > body.txt
         This issue was created because the 'horizontal review requested' label was added to
         § ${{ github.event.issue.html_url }}
@@ -51,6 +53,10 @@ jobs:
         This review is requested prior to the [Advisory Committee Review](https://www.w3.org/guide/process/charter.html#ac-review).
         
         ${{ github.event.issue.body }}
+
+        ## Charter facilitator(s)
+        
+        $ASSIGNEES
         EOF
         gh issue create \
           --repo "$repo" \
