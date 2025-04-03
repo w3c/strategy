@@ -47,7 +47,7 @@ jobs:
         gh issue create \
           --repo "${{ matrix.repo }}" \
           --title "${{ github.event.issue.title }}" \
-          --body-file body.txt
+          --body-file body.txt \
           --label "charter"
       env:
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
