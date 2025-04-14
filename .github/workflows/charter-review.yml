@@ -47,7 +47,9 @@ jobs:
         repo: ${{ matrix.repo }}
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
       run: |
-        echo "${{ github.event.issue }}" > issue.json
+        cat << EOF > issue.json
+        ${{ github.event.issue }}
+        EOF
         ASSIGNEES=$(jq -c -r '.assignees.[].login' issue.json | sed -s 's/^/cc @/')
         cat << EOF > body.txt
         This issue was created because the 'horizontal review requested' label was added to
