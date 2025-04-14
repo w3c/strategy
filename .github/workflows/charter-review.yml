@@ -51,7 +51,7 @@ jobs:
         ASSIGNEES=$(jq -c -r '.assignees.[].login' issue.json | sed -s 's/^/cc @/')
         cat << EOF > body.txt
         This issue was created because the 'horizontal review requested' label was added to
-        ${{ github.event.issue.html_url }}
+        § ${{ github.event.issue.html_url }}
         
         This review is requested prior to the [Advisory Committee Review](https://www.w3.org/guide/process/charter.html#ac-review).
         
