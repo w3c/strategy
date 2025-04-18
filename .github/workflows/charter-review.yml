@@ -42,12 +42,15 @@ jobs:
         repo: ${{ fromJSON(needs.retrieve-horizontal-repos.outputs.repos) }}
 
     steps:
+    - name: Create issue payload file
+      run: echo '${{ toJSON(github.event.issue) }}' > issue.json
+
     - name: create issue in ${{ matrix.repo }}
       env:
         repo: ${{ matrix.repo }}
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
       run: |
-        echo "${{ toJSON(github.event.issue) }}" > issue.json
+        cat issue.json
         ASSIGNEES=$(jq -c -r '.assignees.[].login' issue.json | sed -s 's/^/cc @/')
         cat << EOF > body.txt
         This issue was created because the 'horizontal review requested' label was added to
