@@ -43,7 +43,9 @@ jobs:
 
     steps:
     - name: Create issue payload file
-      run: echo '${{ toJSON(github.event.issue) }}' > issue.json
+      env:
+        ISSUE_CONTEXT: ${{ toJSON(github.event.issue) }}
+      run: echo "$ISSUE_CONTEXT" > issue.json
 
     - name: create issue in ${{ matrix.repo }}
       env:
