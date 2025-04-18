@@ -51,8 +51,8 @@ jobs:
       env:
         repo: ${{ matrix.repo }}
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
+        ISSUE_BODY: ${{ github.event.issue.body }}
       run: |
-        cat issue.json
         ASSIGNEES=$(jq -c -r '.assignees.[].login' issue.json | sed -s 's/^/cc @/')
         cat << EOF > body.txt
         This issue was created because the 'horizontal review requested' label was added to
@@ -60,8 +60,10 @@ jobs:
         
         This review is requested prior to the [Advisory Committee Review](https://www.w3.org/guide/process/charter.html#ac-review).
         
-        ${{ github.event.issue.body }}
-
+        EOF
+        echo "$ISSUE_BODY" >> body.txt
+        cat << EOF >> body.txt
+        
         ## Charter facilitator(s)
         
         $ASSIGNEES
