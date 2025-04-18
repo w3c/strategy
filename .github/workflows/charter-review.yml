@@ -48,7 +48,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.W3CBOT_TOKEN }}
       run: |
         cat << EOF > issue.json
-        ${{ github.event.issue }}
+        ${{ toJSON(github.event.issue) }}
         EOF
         ASSIGNEES=$(jq -c -r '.assignees.[].login' issue.json | sed -s 's/^/cc @/')
         cat << EOF > body.txt
