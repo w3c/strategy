@@ -1,4 +1,4 @@
-# W3C Technical Programming
+# W3C Technical Strategy
 
 ### The [W3C Technical Strategy Pipeline](https://github.com/orgs/w3c/projects/97/views/1) shows work under consideration by the [W3C Technical Strategy team](https://www.w3.org/staff/strat/). 
 
