@@ -14,6 +14,8 @@ New charter proposal, reviewers please take note.
 
 [diff from charter template](https://services.w3.org/htmldiff?doc1=https://w3c.github.io/charter-drafts/charter-template.html&doc2=link)
 
+Expected end of charter refinement phase: unknown
+
 If applicable:
 
 [diff from previous charter](https://services.w3.org/htmldiff)
