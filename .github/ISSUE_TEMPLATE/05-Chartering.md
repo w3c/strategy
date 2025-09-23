@@ -27,13 +27,11 @@ What kind of charter is this? Check the relevant box / remove irrelevant branche
 * New
  - [ ] New WG 
  - [ ] New IG
- - If this is a new WG or IG charter request, link to [Advance Notice](), and any issue discussion: 
-
+ 
 * Existing 
  - [ ] Existing WG recharter 
  - [ ] Existing IG recharter
- - If this is a charter extension or revision, any issue discussion:
-
+ 
 Horizontal Reviews: apply the Github label "Horizontal review requested" to request reviews for accessibility (a11y), internationalization (i18n), privacy, security, and TAG. **Also add a "card" for this issue to the [Strategy Funnel](https://github.com/orgs/w3c/projects/97/views/2).**
 
 ## Communities suggested for outreach
