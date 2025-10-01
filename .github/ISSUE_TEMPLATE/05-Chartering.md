@@ -43,3 +43,5 @@ Where would charter proponents like to see issues raised? (this strategy funnel 
 ## Anything else we should think about as we review? 
 
 Note: proposed chairs should be copied @... on this issue.
+
+Note: if you are doing a rechartering, the team contact is the [Charter facilitator](https://www.w3.org/guide/process/charter.html#cr-acceptance) by default and should assign this issue to themselves.
