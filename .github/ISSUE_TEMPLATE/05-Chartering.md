@@ -43,3 +43,5 @@ Where would charter proponents like to see issues raised? (this strategy funnel 
 ## Anything else we should think about as we review? 
 
 Note: proposed chairs should be copied @... on this issue.
+
+Note: The Technical Strategy Team Lead or Project & Process Team Lead will assign the issue to a [Charter Facilitator](https://www.w3.org/guide/process/charter.html#cr-acceptance) for new charters. For rechartering, the team contact is the Charter Facilitator by default, please assign the issue to them directly.
