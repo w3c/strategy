@@ -25,8 +25,9 @@ jobs:
           # the list of horizontal repositories is hidden inside the definition of the horizontal labels
           curl --fail -o labels.json "https://w3c.github.io/common-labels.json"
           # AB is per https://github.com/w3c/strategy/issues/421
-          ADDONS=',"w3c/AB-memberonly"'
-          REPOS=$(jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json | sed -s 's|\]|'"$ADDONS"']|')
+          # ADDONS=',"w3c/AB-memberonly"'
+          # REPOS=$(jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json | sed -s 's|\]|'"$ADDONS"']|')
+          REPOS=$(jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json)
           echo "repos=$REPOS" >> "$GITHUB_OUTPUT"
 
   create-issue:
