@@ -34,6 +34,10 @@ What kind of charter is this? Check the relevant box / remove irrelevant branche
  
 Horizontal Reviews: apply the Github label "Horizontal review requested" to request reviews for accessibility (a11y), internationalization (i18n), privacy, security, and TAG. **Also add a "card" for this issue to the [Strategy Funnel](https://github.com/orgs/w3c/projects/97/views/2).**
 
+## Substantive changes
+
+Short description (or link to it) of the substantive changes in this charter. Use "None or N/A" otherwise.
+
 ## Communities suggested for outreach
 
 ## Known or potential areas of concern
