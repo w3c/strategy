@@ -27,7 +27,7 @@ jobs:
           # AB is per https://github.com/w3c/strategy/issues/421
           # ADDONS=',"w3c/AB-memberonly"'
           # REPOS=$(jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json | sed -s 's|\]|'"$ADDONS"']|')
-          REPOS=$(jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique' labels.json)
+          REPOS=$(jq -c -r '[.[]."repo-request"] | map(select(.!=null)) | unique | map(select(.!="w3c/a11y-request"))' labels.json)
           echo "repos=$REPOS" >> "$GITHUB_OUTPUT"
 
   create-issue:
